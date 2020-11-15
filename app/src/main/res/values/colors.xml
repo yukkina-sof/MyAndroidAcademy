@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="whiteopacity">#80FFFFFF</color>
+    <color name="whiteopacity75">#BFFFFFFF</color>
     <color name="title">#ECECEC</color>
     <color name="background_container">#191926</color>
     <color name="red_tit">#FF3466</color>
