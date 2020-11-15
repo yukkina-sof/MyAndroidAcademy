@@ -4,14 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MovieDetailsActivity"
-    android:background="@color/background_container">
-<androidx.appcompat.widget.AppCompatImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
+    android:background="@color/background_container"
+    tools:context=".MovieDetailsActivity">
 
-    />
+    <ImageView
+        android:id="@+id/imagebackground"
+        android:layout_width="0dp"
+        android:layout_height="298dp"
+        android:background="@drawable/background_original"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/space_4x" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/space_4x" />
+<LinearLayout
+    android:id="@+id/linearback"
+    android:layout_width="42dp"
+    android:layout_height="16dp"
+    app:layout_constraintStart_toStartOf="@id/guidestart"
+    android:layout_marginTop="56dp"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+    <ImageView
+        android:id="@+id/backsvg"
+        android:layout_width="6dp"
+        android:layout_height="10dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_path"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="28dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/back"
+        android:textColor="@color/whiteopacity"
+        android:textSize="12sp"
+        />
+</LinearLayout>
+    <TextView
+        android:id="@+id/thirteen"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:paddingTop="@dimen/space_1x"
+        android:paddingBottom="@dimen/space_1x"
+        android:layout_marginTop="154dp"
+        android:gravity="center"
+        android:text="@string/number"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/guidestart"
+
+        app:layout_constraintTop_toBottomOf="@+id/linearback"
+
+        />
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:gravity="start"
+
+        android:text="@string/title_averages"
+        android:textColor="@color/title"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@id/guideend"
+        app:layout_constraintStart_toStartOf="@id/guidestart"
+        app:layout_constraintTop_toBottomOf="@+id/thirteen"
+
+        />
+
+    <TextView
+        android:id="@+id/redtitle"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:gravity="start"
+        android:text="@string/title_red"
+        android:textColor="@color/red_tit"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guideend"
+        app:layout_constraintStart_toStartOf="@id/guidestart"
+        app:layout_constraintTop_toBottomOf="@+id/texttitle"
+
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
