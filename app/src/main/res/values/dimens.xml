@@ -14,6 +14,7 @@
 <!-- SolutionThreeScreen -->
 <dimen name="solution_three_title_height">64dp</dimen>
     <dimen name="text_actors">12sp</dimen>
+    <dimen name="movie_title">14sp</dimen>
     <!-- SolutionThreeScreen -->
 
 </resources>
