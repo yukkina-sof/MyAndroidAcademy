@@ -12,6 +12,8 @@
     <color name="names_actors">#D8D8D8</color>
     <color name="rewiews">#6D6D80</color>
     <color name="title">#ECECEC</color>
+    <color name="run_color_min">#565665</color>
     <color name="background_container">#191926</color>
+    <color name="background_container_light">#222232</color>
     <color name="red_tit">#FF3466</color>
 </resources>
