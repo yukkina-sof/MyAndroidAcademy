@@ -13,6 +13,7 @@
 
 <!-- SolutionThreeScreen -->
 <dimen name="solution_three_title_height">64dp</dimen>
-<!-- SolutionThreeScreen -->
+    <dimen name="text_actors">12sp</dimen>
+    <!-- SolutionThreeScreen -->
 
 </resources>
